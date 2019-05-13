@@ -1,0 +1,12 @@
+.gradle
+.idea
+*.iml
+
+
+out
+build
+
+*.class
+.DS_Store
+
+secret.properties
