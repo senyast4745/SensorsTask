@@ -149,7 +149,7 @@ public class ControllersTest {
                 assertEquals(12 + count, sensors[i].getCoord1());
                 assertEquals(12 + count, sensors[i].getCoord2());
                 assertEquals(18 + i, sensors[i].getTemperature());
-                assertEquals(Character.toString( 'C' + (int)count), sensors[i].getCity());
+                assertEquals(('C' + (int)count) , sensors[i].getCity().toCharArray()[0]);
                 if (i % 3 == 0) {
                     count += 0.8;
                 } else {
@@ -243,7 +243,7 @@ public class ControllersTest {
                 assertEquals(13 + count, sensors[i].getCoord1());
                 assertEquals(13 + count, sensors[i].getCoord2());
                 assertEquals(21 + i, sensors[i].getTemperature());
-                assertEquals(Character.toString( 'D' + (int)count), sensors[i].getCity());
+                assertEquals(( 'D' + (int)count), sensors[i].getCity().toCharArray()[0]);
                 if (i % 3 == 0) {
                     count += 0.8;
                 } else {
@@ -319,7 +319,7 @@ public class ControllersTest {
                 assertEquals(10 + count, sensors[i].getCoord1());
                 assertEquals(10 + count, sensors[i].getCoord2());
                 assertEquals(10 + i, sensors[i].getTemperature());
-                assertEquals(Character.toString( 'A' + (int)count), sensors[i].getCity());
+                assertEquals(( 'A' + (int)count), sensors[i].getCity().toCharArray()[0]);
                 if (i != 0 && i % 3 == 0) {
                     count += 0.8;
                 } else {
@@ -348,7 +348,7 @@ public class ControllersTest {
                 assertEquals(11 + count, sensors[i].getCoord1());
                 assertEquals(11 + count, sensors[i].getCoord2());
                 assertEquals(13 + i, sensors[i].getTemperature());
-                assertEquals(Character.toString( 'B' + (int)count), sensors[i].getCity());
+                assertEquals(( 'B' + (int)count), sensors[i].getCity().toCharArray()[0]);
                 if (i != 0 && i % 3 == 0) {
                     count += 0.8;
                 } else {
